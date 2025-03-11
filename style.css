@@ -1,0 +1,99 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+    transition: background 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #4CAF50;
+}
+
+.container {
+    padding: 40px;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+#game img {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-icons img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    transition: transform 0.3s;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.2);
+}
+
+.typing {
+    color: #4CAF50;
+    border-right: 2px solid #4CAF50;
+    padding-right: 5px;
+    animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    from { border-color: #4CAF50; }
+    to { border-color: transparent; }
+}
