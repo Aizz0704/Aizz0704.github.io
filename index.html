@@ -3,87 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Pribadi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            background-color: #1f1f1f;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            text-align: center;
-        }
-        h1, h2 {
-            color: #4CAF50;
-        }
-        .contact-icons {
-            margin-top: 20px;
-        }
-        .contact-icons a {
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .contact-icons img {
-            width: 40px;
-            height: 40px;
-            filter: invert(1);
-            transition: transform 0.2s;
-        }
-        .contact-icons img:hover {
-            transform: scale(1.1);
-        }
-    </style>
+    <title>Wizzh Store Real</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Portofolio Pribadi</h1>
-
-        <h2>About Me</h2>
-        <p>
-            Saya adalah seorang desainer logo dan poster, serta seorang guru C++ yang membimbing tiga siswa dalam belajar pemrograman. 
-            Saya juga merupakan anggota tim cyber white hat di kelas online yang aktif dalam kegiatan keamanan digital. 
-            Selain itu, saya sedang mengembangkan aplikasi Android untuk keperluan absensi siswa dan pencatatan kas kelas menggunakan Kotlin dan Jetpack Compose. 
-            Saya memiliki pengalaman membuat proyek besar seperti sistem ATM, kalkulator, manajemen perhotelan, bahkan saya membuat proyek simulasi Alfamart dengan bahasa pemrograman C++. 
-            Saya tertarik pada dunia coding, dan juga mempunyai impian dengan skill hacking dengan topi putih maka dari itu saya terus mengeksplorasi berbagai teknologi untuk mengembangkan kemampuan saya.
-        </p>
-
-        <h2>Proyek Unggulan</h2>
-        <ul>
-            <li>Sistem ATM – Aplikasi simulasi transaksi ATM berbasis C++.</li>
-            <li>Kalkulator C++ – Kalkulator canggih dengan fitur kompleks berbasis C++.</li>
-            <li>Aplikasi Absensi Siswa – Aplikasi berbasis Android dengan database SQLite.</li>
-            <li>Aplikasi Kas Kelas – Aplikasi Android dengan fitur pencatatan pemasukan dan pengeluaran kas kelas.</li>
-        </ul>
-
-        <h2>Keahlian</h2>
-        <ul>
-            <li>Desain Grafis (Logo & Poster)</li>
-            <li>Pemrograman C++</li>
-            <li>Pengembangan Aplikasi Android dengan Kotlin</li>
-            <li>Keamanan Digital (White Hat Cyber Team)</li>
-            <li>Penggunaan SQLite untuk manajemen database</li>
-        </ul>
-
-        <h2>Contact Me</h2>
-        <div class="contact-icons">
-            <a href="https://wa.me/6289630575104" target="_blank">
-                <img src="https://img.icons8.com/ios/50/phone.png" alt="Telepon">
-            </a>
-            <a href="https://www.instagram.com/wizzh.real?igsh=MWd4bXVmMzlzcDhpNQ==" target="_blank">
-                <img src="https://img.icons8.com/ios/50/instagram-new.png" alt="Instagram">
-            </a>
+    <div class="navbar">
+        <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu" id="menu">
+            <a href="index.html">Profile</a>
+            <a href="projects.html">Project C++</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact Me</a>
         </div>
     </div>
+
+    <div class="container">
+        <section id="profile" data-aos="fade-down">
+            <h1>
+              <span style="color: white;">Halo Everyone<br>My Name Is</span>
+            <span class="typing" id="dynamicText"></span></h1>
+        </section>
+
+        <section id="about" data-aos="fade-right">
+            <h2>About Me</h2>
+            <p>
+                Saya adalah seorang desainer logo dan poster, serta seorang murid kelas 1 berjurusan Rekayasa Perangkat Lunak disekolah SMK Negeri 7 Makassar.<br>
+                Saya mempunyai impian untuk menjadi team cyber yang aktif dalam kegiatan keamanan digital.
+                Saya memiliki pengalaman membuat proyek besar seperti Sistem Managemen Bank dan kalkulator dengan bahasa pemrograman C++.<br>
+                Saya tertarik pada dunia coding dan terus mengeksplorasi berbagai teknologi untuk mengembangkan kemampuan saya.
+            </p>
+        </section>
+        
+        <section id="game" data-aos="zoom-in">
+          <div>
+          <h2>My Favorite Game</h2>
+          <img src="background.jpg" alt="">
+          </div>
+        </section>
+
+        <section id="contact" data-aos="zoom-in">
+            <h2>Contact Me</h2>
+            <div class="contact-icons">
+                <a href="https://youtube.com/@wizzhreall" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/youtube-play.png" alt="YouTube">
+                </a>
+                <a href="https://wa.me/6289630575104" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/wizzh.real" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/instagram-new.png" alt="Instagram">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
