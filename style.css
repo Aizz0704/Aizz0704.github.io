@@ -1,0 +1,353 @@
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #1f1f1f;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-teks {
+  margin-left: auto;
+}
+
+.navbar-teks i {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  font-size: 24px;
+  margin-right: 25px;
+  color: #ffffff;
+}
+
+
+.menu-btn {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from { opcity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#intro {
+  font-size: 50px;
+  margin-top: 100px;
+}
+#about {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.aboutName {
+  color: black;
+}
+.rgb-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  animation: rgbGlow 3s infinite alternate;
+}
+
+@keyframes rgbGlow {
+  0% { text-shadow: 0 0 10px red; color: red; }
+  50% { text-shadow: 0 0 10px green; color: green; }
+  100% { text-shadow: 0 0 10px blue; color: blue; }
+}
+
+
+.aboutSkill {
+  color: #25fffd;
+}
+
+.aboutDesk {
+  color: #242424;
+}
+
+.container-Desk {
+  position: relative;
+  top: -15px;
+}
+
+.container-Email {
+  position: relative;
+  top: -15px;
+}
+
+.aboutEmail {
+  color: blue;
+}
+
+.aboutEmailName {
+  color: black;
+}
+
+.container-Alamat {
+  position: relative;
+  top: -35px;
+}
+
+.aboutAlamat {
+  color: blue;
+}
+
+.aboutAlamatName {
+  color: black;
+}
+
+#aboutMe img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px black;
+}
+
+#aboutMe p {
+  text-align: justify;
+  line-height: 1.8;
+  color: #d1d1d1;
+}
+
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #555;
+  transition: background 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #4CAF50;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1, h2 {
+  color: #4CAF50;
+}
+#game {
+  display: flex;
+  margin-top: 20px; 
+  padding: 20px;
+  background-color: #2b2b2b; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+}
+
+#game h2 {
+  color: #4CAF50; 
+  margin-bottom: 15px;
+}
+
+#game img {
+  width: 50%;
+  max-width: 200px;
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.contact-icons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.contact-icons-profile {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  filter: drop-shadow(1px 1px 20px #white);
+}
+.contact-icons-profile a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.contact-icons-profile img {
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+.contact-icons img {
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2);
+}
+
+.typing {
+  color: #4CAF50;
+  border-right: 2px solid #4CAF50;
+  padding-right: 5px;
+  animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  from { border-color: #4CAF50; }
+  to { border-color: transparent; }
+}
+
+#scrollToAboutMe {
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 120px;
+  height: 35px;
+  border: 2px solid #c013ff;
+  background-color: #c013ff;
+  border-radius: 25px;
+}
+
+.h2-style {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; 
+  padding: 20px;
+  background-color: #2b2b2b; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-container {
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.icon-hover {
+  display: inline-block;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.icon-hover:hover, .icon-hover:active {
+  transform: translateY(-10px);
+}
+
+.container-education {
+  text-align: center;
+}
+
+.container-education-image {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 25px;
+}
+
+.container-education h2 {
+  color: white;
+}
+
+.container-education span {
+  color: #d855ff;
+}
+
+.icon-education {
+  align-items: center;
+  font-size: 50px;
+}
+
+.motivasi {
+  position: relative;
+  top: -15px;
+}
+
+.deskripsi-media {
+  position: relative;
+  top: -15px;
+}
+
+.logo-smk {
+  filter: drop-shadow(1px 1px 20px black);
+}
+
+.deskripsi-media h4 {
+  position: relative;
+  top: -15px;
+  color: #8400f8;
+}
+
+.deskripsi-media h3 {
+  color: #326540;
+}
+
+.deskripsi-media .date-school {
+  position: relative;
+  top: -15px;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #008000;
+}
+
+.view-school {
+  cursor: pointer;
+  height: 25px;
+  background-color: #c013ff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
