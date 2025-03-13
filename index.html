@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizzh Store Real</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu" id="menu">
+            <a href="index.html">Profile</a>
+            <a href="projects.html">Project C++</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+        <div class="navbar-teks">Muhammad Azis
+        <i class="bi bi-person-circle"></i>
+        </div>
+    </div>
+    <div class="container">
+    <div id="particles-js"></div>
+    <section class="profile" data-aos="fade-down">
+        <h1 id="intro">
+            <span style="color: white;">Hi There<br>I'm Muhammad</span><br>
+            <span>Azis</span>
+            <span style="color: white;">Asmara</span>
+        </h1>
+        <h2><span style="color: white;">I Am Into </span>
+        <span style="color: #b80000;" class="typing" id="dynamicText"></span>
+        </h2>
+        <button onclick="scrollToAboutMe()" id="scrollToAboutMe" class="btn" type="button">
+            About Me <i class="bi bi-arrow-down"></i>
+        </button>
+        <div class="contact-icons-profile">
+            <a href="https://youtube.com/@wizzhreall" target="_blank">
+                <img src="https://img.icons8.com/ios/50/youtube-play.png" class="icon-hover" alt="YouTube">
+            </a>
+            <a href="https://wa.me/6289630575104" target="_blank">
+                <img src="https://img.icons8.com/ios/50/whatsapp.png" class="icon-hover" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/wizzh.real" target="_blank">
+                <img src="https://img.icons8.com/ios/50/instagram-new.png" class="icon-hover" alt="Instagram">
+            </a>
+            <a href="https://github.com/Aizz0704" target="_blank">
+                <img src="https://img.icons8.com/ios/50/github.png" class="icon-hover" alt="Github">
+            </a>
+        </div>
+    </section>
+</div>
+
+
+        <section id="about" data-aos="fade-right">
+          <div id="aboutMe">
+            <h2 class="h2-style"><b>About Me</b></h2>
+            <img src="/media/fotoku.jpg" alt="">
+            <h1 class="aboutName"><b>I'm Muhammad<br>
+            <span class="rgb-text">Azis</span> Asmara</b></h1>
+            <h4 class="aboutSkill">Logo Design | Junior Web Developer | Data Science | Front End Developer | Digital Marketing</h4>
+            <div class="container-Desk">
+            <h5 class="aboutDesk">
+              Saya Muhammad azis asmara, saya lahir di Makassar, 07 April 2009.
+              Saya pelajar di sekolah SMK Negeri 7 Makassar, jurusan Rekayasa Perangkat Lunak.
+              Saya memiliki keahlian di bidang Logo Design, Junior Web Developer, Data Science, Front End Developer & Digital Marketing.
+            </h5>
+            </div>
+            <div class="container-Email">
+            <h5>
+              <span class="aboutEmail">Email : </span>
+              <span class="aboutEmailName">muhammadAzis070409@gmail.com</span>
+            </h5>
+            </div>
+            <div class="container-Alamat">
+              <h5>
+                <span class="aboutAlamat">Alamat : </span>
+                <span class="aboutAlamatName">Komp. Berlain Permai, RT 002/RW 006, Kecamatan Manggala, Kota Makassar, Sulawesi Selatan 90234</span>
+              </h5>
+            </div>
+            </div>
+        </section>
+<!-- GAME -->
+        <section id="game" data-aos="fade-right">
+    <div>
+        <h2 class="h2-style">My Favorite Game</h2>
+            <img src="/media/free_fire.jpg" alt="">
+            <img src="/media/gta.jpg" alt="">
+    </div>
+</section>
+<!-- GAME END -->
+        <section data-aos="fade-up">
+        <div class="skill-container">
+    <h2>Skill & Abilities</h2><div class="icon-container"><i class="bi bi-shop icon-hover" data-aos="fade-up" onclick="digitalMarketing()"></i>
+<i class="bi bi-laptop icon-hover" data-aos="fade-up" onclick="frontendDev()"></i>
+<i class="bi bi-puzzle icon-hover" data-aos="fade-up" onclick="problemSolving()"></i>
+<i class="bi bi-brush icon-hover" data-aos="fade-up" onclick="designer()"></i>
+<i class="bi bi-graph-up icon-hover" data-aos="fade-up" onclick="dataScience()"></i>
+<br>
+<i class="bi bi-badge-ad icon-hover" data-aos="fade-up" onclick="ads()"></i>
+<i class="bi bi-code-slash icon-hover" data-aos="fade-up" onclick="cpp()"></i>
+<i class="bi bi-file-code icon-hover" data-aos="fade-up" onclick="lua()"></i>
+<i class="bi bi-lightbulb icon-hover" data-aos="fade-up" onclick="kreatif()"></i>
+<i class="bi bi-calendar-check icon-hover" data-aos="fade-up" onclick="manajemenWaktu()"></i>
+<i class="bi bi-chat-left-text icon-hover" data-aos="fade-up" onclick="komunikasi()"></i>
+</div>
+</div>
+</section>
+
+<section class="container-education" data-aos="fade-down">
+    <div class="container-education-judul" data-aos="fade-up">
+      <h2>My 
+      <span>Education</span>
+      <i class="bi bi-mortarboard-fill icon-education"></i>
+      </h2>
+      <h5 class="motivasi">Education Is Not The Learning Of Facts, But The Training Of<br>The Mind To Think.</h5>
+    </div>
+    <div class="container-education-image icon-hover" data-aos="fade-up">
+      <div class="media-smk">
+      <img src="/media/smkn7.png" alt="" class="logo-smk">
+      <div class="deskripsi-media">
+      <h3><i>Sekolah Menengah Kejuruan 7</i></h3>
+      <h4>Rekayasa Perangkat Lunak</h4>
+      <h3 class="date-school">2024-2027 | In Progress</h3>
+      <button class="view-school" onclick="openWebSchool()">Web School</button>
+      </div>
+      </div>
+    </div>
+</section>
+
+        <section id="contact" data-aos="fade-up">
+            <h2 class="h2-style">Contact Me</h2>
+            <div class="contact-icons">
+                <a href="https://youtube.com/@wizzhreall" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/youtube-play.png" alt="YouTube">
+                </a>
+                <a href="https://wa.me/6289630575104" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/wizzh.real" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/instagram-new.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/Aizz0704" target="_blank">
+                  <img src="https://img.icons8.com/ios/50/github.png" alt="Github">
+                  </a>
+                  <a href="mailto:muhammadAzis070409@gmail.com">
+                  <img src="https://img.icons8.com/ios/50/email.png" alt="Email">
+                </a>
+            </div>
+        </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: false });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/particles.min.js"></script>
+</body>
+</html>
