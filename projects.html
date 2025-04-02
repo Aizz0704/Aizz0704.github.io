@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Unggulan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu" id="menu">
+            <a href="index.html" data-aos="fade-left">Profile</a>
+            <a href="projects.html" data-aos="fade-left">Project C++</a>
+            <a href="index.html#about" data-aos="fade-left">About Me</a>
+            <a href="index.html#contact" data-aos="fade-left">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+        <h1>Proyek Unggulan</h1>
+        <ul>
+            <li data-aos="fade-right">Sistem ATM – Aplikasi simulasi transaksi ATM berbasis C++.</li>
+            <li data-aos="fade-left">Kalkulator C++ – Kalkulator canggih dengan fitur kompleks berbasis C++.</li>
+            <li data-aos="fade-right">Aplikasi Absensi Siswa – Aplikasi berbasis Android dengan database SQLite.</li>
+            <li data-aos="fade-left">Aplikasi Kas Kelas – Aplikasi Android dengan fitur pencatatan pemasukan dan pengeluaran kas kelas.</li>
+        </ul>
+    </div>
+    
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
