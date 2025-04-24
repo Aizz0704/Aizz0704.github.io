@@ -42,7 +42,7 @@ window.onload = typeEffect;
         alert('Saya memiliki skill Digital Marketing untuk mempromosikan produk secara efektif.');
     }
     function frontendDev() {
-        alert('Saya memiliki skill Frontend Developer dengan kemampuan mengembangkan antarmuka web yang responsif dan user-friendly.');
+        alert('Saya memiliki skill Frontend Developer walaupun masih beginner tapi saya dapat memahami banyak hal dalam 1 kali pertemuan.');
     }
     function problemSolving() {
         alert('Saya memiliki skill Problem Solving yang membantu saya menemukan solusi efektif dalam menghadapi berbagai tantangan.');
@@ -54,22 +54,22 @@ window.onload = typeEffect;
         alert('Saya memiliki skill Data Science untuk menganalisis data dan menghasilkan wawasan yang bermanfaat.');
     }
     function ads() {
-        alert('Saya memiliki skill Ads untuk mengelola iklan yang tepat sasaran.');
+        alert('Saya dapat mengetahui tempat yang tepat untuk mengiklankan suatu produk dan tidak membuang banyak biaya.');
     }
     function cpp() {
         alert('Saya memiliki skill C++ untuk pengembangan aplikasi berperforma tinggi.');
     }
     function lua() {
-        alert('Saya memiliki skill Lua untuk kebutuhan scripting yang fleksibel dan efisien.');
+        alert('Saya memiliki skill Lua untuk memodifikasi permainan sesuai kemauan saya.');
     }
     function kreatif() {
         alert('Saya memiliki kemampuan berpikir kreatif untuk menciptakan ide-ide baru dan inovatif.');
     }
     function manajemenWaktu() {
-        alert('Saya memiliki kemampuan manajemen waktu yang baik untuk menyelesaikan tugas secara efisien.');
+        alert('Saya memiliki kemampuan manajemen waktu yang baik, waktu adalah uang bagiku.');
     }
     function komunikasi() {
-        alert('Saya memiliki kemampuan komunikasi yang baik untuk menyampaikan ide dengan jelas.');
+        alert('Saya memiliki kemampuan komunikasi yang baik untuk berkonsultasi kepada tim.');
 }
 
 const icons = document.querySelectorAll('.icon-hover');
