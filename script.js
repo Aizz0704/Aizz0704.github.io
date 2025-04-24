@@ -10,7 +10,7 @@ function scrollToAboutMe() {
     aboutMe.scrollIntoView({ behavior: 'smooth' });
 }
 
-const texts = ["Dev C++", "Logo Design", "GTA Modding", "Dev bot whatsapp", "Prompt Engineer"];
+const texts = ["BackEnd", "Designer", "Lua Exe", "Prompt Engineer", "AI Analysis", "Crypto", "Cyber Security"];
 let index = 0;
 let charIndex = 0;
 const dynamicText = document.getElementById('dynamicText');
