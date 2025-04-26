@@ -364,4 +364,6 @@ h1, h2 {
 .container-footer {
   color: white;
   background-color: #444;
+  height: 20px;
+  width: 100%;
 }
