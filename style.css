@@ -366,4 +366,7 @@ h1, h2 {
   background-color: #444;
   height: 20px;
   width: 100%;
+  text-align: center;
+  position: relative;
+  top: 10px;
 }
