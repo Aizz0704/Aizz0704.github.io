@@ -135,7 +135,7 @@ body {
 
 #aboutMe img {
   max-width: 100%;
-  border-radius: 15px;
+  border-radius: 50%;
   box-shadow: 1px 1px 20px black;
 }
 
