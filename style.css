@@ -45,7 +45,7 @@ body {
 .menu {
   display: none;
   flex-direction: column;
-  background-color: hsl(240, 5.3%, 26.1%);
+  background-color: rgba(225, 225, 225, 0.1);
   position: absolute;
   top: 50px;
   left: 0;
@@ -56,6 +56,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
   margin-top: 15px;
   border-radius: 15px;
+  backdrop-filter: blur(10px);
 }
 
 @keyframes slideDown {
