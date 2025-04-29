@@ -45,7 +45,7 @@ body {
 .menu {
   display: none;
   flex-direction: column;
-  background-color: rgba(225, 225, 225, 0.1);
+  background-color: rgba(225, 225, 225, 0.2);
   position: absolute;
   top: 50px;
   left: 0;
