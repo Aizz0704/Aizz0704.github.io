@@ -364,6 +364,11 @@ h1, h2 {
   z-index: -1;
   }
 
+.textContact {
+  display: relative;
+  top: 10px;
+}
+
 .container-footer {
   color: #131313;
   background-color: #7f7f7f;
