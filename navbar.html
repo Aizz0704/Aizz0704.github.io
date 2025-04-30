@@ -64,6 +64,18 @@
       width: 25px;
       height: 3px;
       background-color: white;
+      transition: all 0.3s ease;
+    }
+    .hamburger.active div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
     }
 
     @media (max-width: 768px) {
@@ -97,7 +109,7 @@
           <img src="TechMind.png" alt="logo" />
           Muh.Azs
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
           <div></div>
           <div></div>
           <div></div>
@@ -114,9 +126,10 @@
   </nav>
 
   <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("active");
-    }
-  </script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+    document.getElementById("hamburger").classList.toggle("active");
+  }
+</script>
 </body>
 </html>
