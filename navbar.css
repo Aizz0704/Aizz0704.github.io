@@ -5,6 +5,7 @@ nav {
       padding: 10px 20px;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
+      width: 100%;
     }
 
     .nav-container {
