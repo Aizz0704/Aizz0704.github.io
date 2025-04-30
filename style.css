@@ -61,7 +61,7 @@ body {
 }
 
 .aboutEmail {
-  color: #d855ff;
+  color: ##4ed8ff;
 }
 
 .aboutEmailName {
@@ -74,7 +74,7 @@ body {
 }
 
 .aboutAlamat {
-  color: #d855ff;
+  color: ##4ed8ff;
 }
 
 .aboutAlamatName {
@@ -311,7 +311,7 @@ h1, h2 {
 
 .textContact {
   display: relative;
-  top: 20px;
+  top: 20px
 }
 
 .container-footer {
