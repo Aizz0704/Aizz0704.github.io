@@ -323,3 +323,7 @@ h1, h2 {
   position: relative;
   top: 10px;
 }
+
+.purple {
+  color: #d855ff;
+}
