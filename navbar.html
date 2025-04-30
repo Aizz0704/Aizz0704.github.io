@@ -17,17 +17,18 @@
     }
 
     nav {
-      background-color: rgba(265, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.1);
       color: white;
       padding: 10px 20px;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
     }
 
-    .nav-top {
+    .nav-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .logo {
@@ -38,7 +39,6 @@
     .menu {
       display: flex;
       gap: 20px;
-      margin-top: 10px;
     }
 
     .menu a {
@@ -52,6 +52,7 @@
       flex-direction: column;
       cursor: pointer;
       gap: 4px;
+      margin-left: auto;
     }
 
     .hamburger div {
@@ -61,10 +62,16 @@
     }
 
     @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       .menu {
         display: none;
         flex-direction: column;
         width: 100%;
+        margin-top: 10px;
       }
 
       .menu.active {
@@ -79,20 +86,20 @@
 </head>
 <body>
   <nav>
-    <div class="nav-top">
+    <div class="nav-container">
       <div class="logo">MySite</div>
       <div class="hamburger" onclick="toggleMenu()">
         <div></div>
         <div></div>
         <div></div>
       </div>
-    </div>
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="index.html#about">Tentang</a>
-      <a href="projects.html">Proyek</a>
-      <a href="index.html#galery">Album</a>
-      <a href="index.html#contact">Kontak</a>
+      <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">Tentang</a>
+        <a href="projects.html">Proyek</a>
+        <a href="index.html#galery">Album</a>
+        <a href="index.html#contact">Kontak</a>
+      </div>
     </div>
   </nav>
 
