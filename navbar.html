@@ -26,9 +26,15 @@
 
     .nav-container {
       display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .nav-top {
+      display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      width: 100%;
     }
 
     .logo {
@@ -52,7 +58,6 @@
       flex-direction: column;
       cursor: pointer;
       gap: 4px;
-      margin-left: auto;
     }
 
     .hamburger div {
@@ -64,7 +69,7 @@
     @media (max-width: 768px) {
       .nav-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
       }
 
       .menu {
@@ -87,11 +92,16 @@
 <body>
   <nav>
     <div class="nav-container">
-      <div class="logo">MySite</div>
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="nav-top">
+        <div class="logo">
+          <img src="TechMind.png" alt="logo" />
+          Muh.Azs
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div class="menu" id="menu">
         <a href="index.html">Home</a>
