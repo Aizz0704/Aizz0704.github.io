@@ -27,7 +27,7 @@ nav {
     .menu {
       display: flex;
       gap: 20px;
-      justify-content: center;
+      justify-content: flex-end;
       margin-top: 10px;
     }
 
@@ -67,8 +67,9 @@ nav {
       .menu {
         display: none;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
+        text-align: center;
       }
 
       .menu.active {
