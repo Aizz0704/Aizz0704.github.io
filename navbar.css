@@ -27,7 +27,7 @@ nav {
     .menu {
       display: flex;
       gap: 20px;
-      justify-content: flex-end;
+      justify-content: center;
       margin-top: 10px;
     }
 
