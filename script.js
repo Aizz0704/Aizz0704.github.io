@@ -1,10 +1,3 @@
-
-
-function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-}
-
 function scrollToAboutMe() {
     const aboutMe = document.getElementById('about');
     aboutMe.scrollIntoView({ behavior: 'smooth' });
