@@ -67,9 +67,8 @@ nav {
       .menu {
         display: none;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
-        text-align: center;
       }
 
       .menu.active {
