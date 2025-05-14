@@ -6,7 +6,6 @@ nav {
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       z-index: 9999;
-      width: 100%;
     }
 
     .nav-container {
@@ -30,6 +29,7 @@ nav {
       gap: 20px;
       justify-content: flex-end;
       margin-top: 10px;
+      width: 100%;
     }
 
     .menu a {
